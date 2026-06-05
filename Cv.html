@@ -69,6 +69,10 @@
             margin-bottom: 5px;
         }
 
+        .hidden {
+            display: none;
+        }
+
         .header-container {
             display: flex;
             flex-direction: row;
@@ -185,6 +189,18 @@
             <h2>Centres d'intérêt</h2>
             <p>Photographie, céramique, randonnée, design brutaliste, podcast tech et design</p>
         </div>
+
+        <div class="section contact">
+            <h2>Contact rapide</h2>
+            <p>Envoyez-moi un message pour en savoir plus.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Votre message" aria-label="Message" />
+                <button type="submit">Envoyer</button>
+            </form>
+            <p id="output" class="message-output"></p>
+            <button type="button" data-action="toggle" data-target=".interests">Voir/masquer centres d'intérêt</button>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
